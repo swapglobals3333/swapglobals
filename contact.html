@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact | Swap Globals</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header>
-    <h1>Swap Globals</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="container nav-container">
+      <div class="logo-title">
+        <img src="logo.png" alt="Swap Globals Logo" class="logo" />
+        <h1>Swap Globals</h1>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
-  <main>
-    <h2>Contact Us</h2>
-    <form>
-      <label>Name: <input type="text" required></label><br><br>
-      <label>Email: <input type="email" required></label><br><br>
-      <label>Message:<br><textarea required></textarea></label><br><br>
-      <button type="submit">Send</button>
-    </form>
+
+  <main class="container">
+    <section class="contact-section email-only">
+      <h2>Contact Us</h2>
+      <p>You can reach us anytime at:</p>
+      <a href="mailto:swapglobals@gmail.com" class="contact-email">swapglobals@gmail.com</a>
+    </section>
   </main>
+
   <footer>
     <p>&copy; 2025 Swap Globals. All rights reserved.</p>
   </footer>
