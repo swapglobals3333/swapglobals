@@ -268,4 +268,20 @@
     align-items: center;
     gap: 12px; /* space between logo and text */
   }
+.social-icons {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: #444;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #e63946; /* Customize hover color */
+}
+
   
