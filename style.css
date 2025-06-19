@@ -302,5 +302,14 @@
 .contact-email:hover {
   text-decoration: underline;
 }
+.hero {
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+}
 
   
