@@ -326,6 +326,8 @@ footer {
 .contact-email:hover {
   text-decoration: underline;
 }
+
+/* ML Course Section */
 .ml-course {
   margin: 3rem 0;
   text-align: center;
@@ -348,11 +350,13 @@ footer {
 .course-card h3 {
   margin: 0.5rem 0;
   font-weight: 600;
+  color: #000; /* Black */
 }
 
 .course-card p {
   font-size: 0.95rem;
   margin-bottom: 1rem;
+  color: #000; /* Black */
 }
 
 .course-card .btn {
@@ -367,11 +371,3 @@ footer {
 .course-card .btn:hover {
   background: #e68900;
 }
-.course-card h3,
-.course-card p {
-  color: #000; /* Black text */
-}
-
-
-
-
