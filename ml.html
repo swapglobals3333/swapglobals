@@ -1,1 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Machine Learning — Types & Understanding</title>
+  <style>
+    :root{--light-yellow:#fff9db;--white:#ffffff;--accent:#2c3e50}
+    html,body{height:100%;margin:0;font-family:Calibri, "Segoe UI", Tahoma, Geneva, sans-serif;font-weight:700;color:var(--accent)}
+    body{background:linear-gradient(180deg,var(--white) 0 140px,var(--light-yellow) 140px 100%);line-height:1.45}
+    .container{max-width:900px;margin:36px auto;padding:28px;background:rgba(255,255,255,0.6);box-shadow:0 8px 30px rgba(44,62,80,0.06);border-radius:12px}
+    header{padding:10px 0 22px;border-bottom:2px solid rgba(44,62,80,0.06)}
+    h1{margin:0;font-size:30px}
+    p.lead{margin:12px 0 18px;color:#2c3e50;opacity:0.95}
+    section{margin:18px 0}
+    h2{font-size:20px;margin:0 0 8px}
+    .explain{background:#fff;padding:14px;border-radius:8px;border:1px solid rgba(44,62,80,0.04)}
+    ul.types{padding-left:18px;margin:10px 0}
+    li.type{margin:10px 0}
+    table.sample{width:100%;border-collapse:collapse;margin-top:12px}
+    table.sample th, table.sample td{padding:8px;text-align:left;border-bottom:1px solid rgba(44,62,80,0.06)}
+    footer{margin-top:20px;padding-top:12px;border-top:1px dashed rgba(44,62,80,0.04);font-size:13px;color:rgba(44,62,80,0.8)}
+    @media (max-width:600px){.container{margin:16px;padding:18px}}    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Machine Learning — Simple Understanding & Types</h1>
+      <p class="lead">A concise, easy-to-follow explanation of what machine learning is and the main types you should know.</p>
+    </header>
+
+    <section>
+      <h2>What is Machine Learning? (In plain words)</h2>
+      <div class="explain">
+        Machine learning teaches computers to make predictions or decisions by learning patterns from data instead of following explicit, hand-coded rules. Think of it like teaching a student: you show examples, the student recognizes patterns, and later they apply that knowledge to new, similar situations.
+      </div>
+    </section>
+
+    <section>
+      <h2>Why data matters</h2>
+      <div class="explain">
+        Data is the experience the machine learns from. Good, well-labeled, representative data leads to useful models. Typical data in machine learning contains rows (examples) and columns (features). Below is a small sample of dataset content a model might use.
+        <table class="sample" aria-label="sample data">
+          <thead>
+            <tr><th>id</th><th>age</th><th>salary</th><th>education_level</th><th>purchased_product</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>29</td><td>52000</td><td>Bachelor</td><td>Yes</td></tr>
+            <tr><td>2</td><td>45</td><td>85000</td><td>Master</td><td>No</td></tr>
+            <tr><td>3</td><td>37</td><td>61000</td><td>Diploma</td><td>Yes</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>Types of Machine Learning — Intuitive explanations</h2>
+      <div class="explain">
+        <ul class="types">
+          <li class="type"><strong>Supervised Learning</strong> — The machine learns from examples that include both inputs and the correct outputs. Think of it as learning with a teacher: you show questions and answers, and the model learns to map inputs to outputs. Common uses: classification (is this email spam?) and regression (predict house prices).</li>
+
+          <li class="type"><strong>Unsupervised Learning</strong> — The machine is given only inputs and must find structure by itself. No teacher is present. It groups similar items or discovers hidden patterns. Common uses: clustering (group customers by behavior) and dimensionality reduction (simplify data while keeping important information).</li>
+
+          <li class="type"><strong>Semi-Supervised Learning</strong> — A blend of supervised and unsupervised approaches. The model learns from a small amount of labeled data supplemented with a larger amount of unlabeled data. This is useful when labeling is expensive but unlabeled data is plentiful.</li>
+
+          <li class="type"><strong>Reinforcement Learning</strong> — The machine learns by interacting with an environment and receiving feedback as rewards or penalties. It's like training a dog with treats: actions that lead to rewards are reinforced. Common in robotics, game playing, and control systems.</li>
+
+          <li class="type"><strong>Self-Supervised Learning</strong> — A special unsupervised-style approach where the model creates its own supervision from the data. For example, by hiding part of the input and asking the model to predict it. Useful in language and vision tasks to pretrain large models.</li>
+
+          <li class="type"><strong>Deep Learning</strong> — A subfield that uses multi-layered neural networks to learn complex patterns. It can be applied in supervised, unsupervised, or reinforcement setups. Deep learning shines when data and compute are abundant (e.g., image recognition, speech).</li>
+
+          <li class="type"><strong>Transfer Learning</strong> — Reusing a model trained on one task as a starting point for a different but related task. It saves time and data because the model has already learned useful generic features.</li>
+
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>How to pick a type (practical guidance)</h2>
+      <div class="explain">
+        Choose based on the problem and data availability: if you have labeled examples, start with supervised methods. If not, explore unsupervised or self-supervised techniques. For tasks involving sequential decisions or interaction, consider reinforcement learning. For most modern perception tasks, deep learning or transfer learning is a strong option.
+      </div>
+    </section>
+
+    <footer>
+      Tip: good ML is 80% data and 20% modeling — collect, clean, and understand your data first.
+    </footer>
+  </div>
+</body>
+</html>
 
