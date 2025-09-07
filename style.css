@@ -367,5 +367,11 @@ footer {
 .course-card .btn:hover {
   background: #e68900;
 }
+.course-card h3,
+.course-card p {
+  color: #000; /* Black text */
+}
+
+
 
 
