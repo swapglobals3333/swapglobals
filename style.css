@@ -371,3 +371,70 @@ footer {
 .course-card .btn:hover {
   background: #e68900;
 }
+/* Make tables responsive on smaller devices */
+.project-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.project-table th,
+.project-table td {
+  padding: 10px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+/* Ensure project names don't get cut off */
+.project-table td:first-child {
+  text-align: left;
+  max-width: 200px; /* keeps it clean */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* For mobile view */
+@media (max-width: 768px) {
+  .project-table {
+    display: block;
+    width: 100%;
+    overflow-x: auto; /* scrollable horizontally */
+    -webkit-overflow-scrolling: touch; /* smooth scrolling */
+  }
+
+  .project-table table,
+  .project-table thead,
+  .project-table tbody,
+  .project-table th,
+  .project-table td,
+  .project-table tr {
+    display: block;
+  }
+
+  .project-table thead {
+    display: none; /* Hide table headers */
+  }
+
+  .project-table tr {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  .project-table td {
+    text-align: left;
+    padding: 8px;
+    position: relative;
+  }
+
+  /* Add labels for each column */
+  .project-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+}
+
